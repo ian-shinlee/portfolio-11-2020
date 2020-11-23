@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+<title>이신 010.7470.1996</title>
+<link rel="shortcut icon" href="./src/shin.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./src/scss/app.css">
+<script>
+    var agent = navigator.userAgent.toLowerCase();
+    if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+        alert("죄송합니다. 가능하시다면 chrome으로 확인해주시기 바랍니다.");
+    }
+</script>
+</head>
+<body>
+    
+    <div class="wrap">
+        <progress max="100" value="0"></progress>
+        <header>
+            <h1>
+                <div class="txt_wrap">
+                    <div class="txt_basic">
+                        
+                        <span class="s0 reveal">안</span>
+                        <span class="s1 reveal">녕</span>
+                        <span class="s2 reveal">하</span>
+                        <span class="s3 reveal">세</span>
+                        <span class="s4 reveal">요</span>
+                        <span class="s5 reveal">,</span>
+                    </div>
+                </div>
+                <br />
+                <div class="txt_wrap">
+                    <div class="txt_basic">
+                        
+                        <span class="s6 reveal">이</span>
+                        <span class="s7 reveal">신</span>
+                        <span class="s8 reveal">입</span>
+                        <span class="s9 reveal">니</span>
+                        <span class="s10 reveal">다</span>
+                        <span class="s11 reveal">.</span>
+                    </div>
+                </div>
+            </h1>
+        </header>
+        <div class="con">
+            <dl class="code_wrap">
+                <dt class="reveal">퍼블리싱 파일: Mobile Web 신세계 TV 쇼핑</dt>
+                <dd>
+                    <ul class="code"></ul>
+                </dd>
+            </dl>
+    
+            <dl class="works_wrap">
+                <dt class="reveal">Project Link List</dt>
+                <dd>
+                    <ul class="works"></ul>
+                </dd>
+            </dl>
+        </div>
+
+        <footer>
+            <dl>
+                <dt class="reveal">Contact</dt>
+                <dd>
+                    <a class="call" href="tel:01074701996">
+                        <div class="txt_wrap"><div class="txt_basic"><span class="s0 reveal">P</span><span class="s1 reveal">h</span><span class="s2 reveal">o</span><span class="s3 reveal">n</span><span class="s4 reveal">e</span></div></div>
+                    </a><br />
+                    <a class="mail" href="mailto:ian.shinlee@gmail.com" target="_top">
+                        <div class="txt_wrap"><div class="txt_basic"><span class="s0 reveal">E</span><span class="s1 reveal">m</span><span class="s2 reveal">a</span><span class="s3 reveal">i</span><span class="s4 reveal">l</span></div></div>
+                    </a> 
+                </dd>
+            </dl>
+        </footer>
+            
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="./src/script/works.js"></script>
+    <script src="./src/script/common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <!--[if !ie]>--> 
+    <script>
+        const reveal = gsap.utils.toArray('.reveal');
+        reveal.forEach((text, i) => {
+            ScrollTrigger.create({
+                trigger:text,
+                toggleClass:'on',
+                start: "top 100%", // 86%
+                end: "bottom 0%"
+            })
+        })
+
+        gsap.to('progress', {
+            value: 100,
+            ease: 'none',
+            scrollTrigger: { scrub: 0.3 }
+        });
+        
+    </script>
+    <!-- <![endif]-->
+
+</body>
+</html>
