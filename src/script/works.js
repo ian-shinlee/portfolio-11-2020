@@ -2,12 +2,12 @@ window.code =
     [
         {
             title:"Main page",
-            link:"../ex/html/index.html",
+            link:"https://ian-shinlee.github.io/portfolio-11-2020/ex/html/index.html",
             message:""
         },
         {
             title:"Cloud Product Detail page",
-            link:"../ex/html/cloud_detail.html",
+            link:"https://ian-shinlee.github.io/portfolio-11-2020/ex/html/cloud_detail.html",
             message:""
         }
     ],
