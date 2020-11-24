@@ -444,7 +444,7 @@ a, a:active, a:hover {
   }
   .wrap {
     width: 100%;
-    padding: 0 20px 20px 20px;
+    padding: 0 20px 6rem 20px;
   }
   .wrap dl dt {
     font-size: 15px;
