@@ -217,8 +217,6 @@ a, a:active, a:hover {
   -webkit-transition: margin 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   transition: margin 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   padding-right: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .txt_wrap div {
