@@ -37,9 +37,9 @@ $largetxt: 2.5rem;
     margin-left: 0; 
     transition: margin .4s cubic-bezier(.445,.05,.55,.95);
     padding-right: 20px;
-    width: auto;
+    min-width: 25vw;
     // box-sizing: border-box;
-    // overflow: hidden;
+    overflow: hidden;
     div {
         transition:opacity .4s cubic-bezier(.445,.05,.55,.95),transform .4s cubic-bezier(.445,.05,.55,.95),visibility .5s .5s;
         span:not(.space) {
