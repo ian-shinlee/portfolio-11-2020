@@ -37,15 +37,12 @@
                 if ( !$(this).hasClass('hover') ) {
                     $(this).addClass('hover');
                     var tool = $(this).children('.tooltip');
-                    toolfunc(tool);
 
                     var isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
                     if (isMobile) {
-                    // Do something
-                    alert('mocile')
+                        tool.addClass('mo');
                     } else {
-                    // Do something
-                    alert('pc')
+                        toolfunc(tool);
                     }
                 } 
             })
@@ -57,10 +54,8 @@
                 })
             }
             $('.con .txt_wrap').mouseleave(function(){
-                if ( $(this).hasClass('hover') ) { 
-                    $(this).removeClass('hover');
-                }
-                
+                $(this).removeClass('hover');
+                $(this).children().closest('.tooltip').removeClass('mo');
             })
         }
     }

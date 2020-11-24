@@ -92,6 +92,10 @@ $largetxt: 2.5rem;
         }
         .tooltip {
             visibility: visible;
+            &.mo {
+                bottom: 20px;
+                left: 10px; 
+            }
         }
     }
 }
