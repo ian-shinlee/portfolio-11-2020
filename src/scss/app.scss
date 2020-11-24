@@ -36,7 +36,8 @@ $largetxt: 2.5rem;
     display: inline-block;
     margin-left: 0; 
     transition: margin .4s cubic-bezier(.445,.05,.55,.95);
-    padding-right: 10px;
+    padding-right: 20px;
+    box-sizing: border-box;
     overflow: hidden;
     div {
         transition:opacity .4s cubic-bezier(.445,.05,.55,.95),transform .4s cubic-bezier(.445,.05,.55,.95),visibility .5s .5s;
@@ -164,23 +165,22 @@ $largetxt: 2.5rem;
         a {
             display: inline-block;
             font-size: $largetxt;
-            &:hover {
-                &:after{             
-                    display: inline-block;
-                    vertical-align: top; 
-                    line-height: 1.2;
-                    color: $point;
-                    animation-duration: .4s;
-                    animation-name: contact-ani;
-                }
-                &.call:after {
-                    content: ' 010.7470.1996'
-                }
-                &.mail:after {
-                    content: ' ian.shinlee@gmail.com'
-                }
-            }
-            
+            // &:hover {
+            //     &:after{             
+            //         display: inline-block;
+            //         vertical-align: top; 
+            //         line-height: 1.2;
+            //         color: $point;
+            //         animation-duration: .4s;
+            //         animation-name: contact-ani;
+            //     }
+            //     &.call:after {
+            //         content: '010.7470.1996'
+            //     }
+            //     &.mail:after {
+            //         content: 'ian.shinlee@gmail.com'
+            //     }
+            // }
         }
     }
     .reveal {
@@ -208,7 +208,7 @@ $largetxt: 2.5rem;
 // media
 @media screen and (max-width: 1000px) {
     html,body {
-        font-size: 2.4vw;
+        font-size: 2.2vw;
     }
     .wrap{
         width: 100%; 

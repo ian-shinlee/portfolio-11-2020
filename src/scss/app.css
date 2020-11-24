@@ -216,7 +216,9 @@ a, a:active, a:hover {
   margin-left: 0;
   -webkit-transition: margin 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   transition: margin 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  padding-right: 10px;
+  padding-right: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   overflow: hidden;
 }
 
@@ -397,25 +399,6 @@ a, a:active, a:hover {
   font-size: 2.5rem;
 }
 
-.wrap footer a:hover:after {
-  display: inline-block;
-  vertical-align: top;
-  line-height: 1.2;
-  color: #9A24FC;
-  -webkit-animation-duration: .4s;
-          animation-duration: .4s;
-  -webkit-animation-name: contact-ani;
-          animation-name: contact-ani;
-}
-
-.wrap footer a:hover.call:after {
-  content: ' 010.7470.1996';
-}
-
-.wrap footer a:hover.mail:after {
-  content: ' ian.shinlee@gmail.com';
-}
-
 .wrap .reveal {
   -webkit-transition: .7s;
   transition: .7s;
@@ -454,7 +437,7 @@ a, a:active, a:hover {
 
 @media screen and (max-width: 1000px) {
   html, body {
-    font-size: 2.4vw;
+    font-size: 2.2vw;
   }
   .wrap {
     width: 100%;
