@@ -306,7 +306,7 @@ a, a:active, a:hover {
 }
 
 .con .txt_wrap.hover .tooltip.mo {
-  bottom: 20px;
+  top: 36px;
   left: 10px;
 }
 
@@ -320,11 +320,11 @@ a, a:active, a:hover {
 .wrap progress {
   position: fixed;
   top: 20px;
-  left: 20px;
+  left: 10px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  width: calc(100% - 40px);
+  width: calc(100% - 20px);
   height: 6px;
   background: transparent;
   border: none;

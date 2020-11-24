@@ -93,7 +93,7 @@ $largetxt: 2.5rem;
         .tooltip {
             visibility: visible;
             &.mo {
-                bottom: 20px;
+                top: 36px;
                 left: 10px; 
             }
         }
@@ -109,9 +109,9 @@ $largetxt: 2.5rem;
     padding: 0 20px 6rem 20px;
 
     progress {
-        position: fixed;top: 20px;left: 20px;
+        position: fixed;top: 20px;left: 10px;
         appearance: none;
-        width: calc(100% - 40px);
+        width: calc(100% - 20px);
         height: 6px;
         background: transparent;
         border: none;
