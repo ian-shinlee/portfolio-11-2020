@@ -57,6 +57,14 @@
                 $(this).removeClass('hover');
                 $(this).children().closest('.tooltip').removeClass('mo');
             })
+
+            var isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
+            if (isMobile) {
+                $(window).scroll(function () {
+                    $('.con .txt_wrap').removeClass('hover');
+                    $('.tooltip').removeClass('mo')
+                });
+            } 
         }
     }
 
