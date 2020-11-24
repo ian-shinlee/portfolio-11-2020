@@ -38,6 +38,15 @@
                     $(this).addClass('hover');
                     var tool = $(this).children('.tooltip');
                     toolfunc(tool);
+
+                    var isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
+                    if (isMobile) {
+                    // Do something
+                    alert('mocile')
+                    } else {
+                    // Do something
+                    alert('pc')
+                    }
                 } 
             })
             function toolfunc(tool) {
