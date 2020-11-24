@@ -37,7 +37,7 @@ $largetxt: 2.5rem;
     margin-left: 0; 
     transition: margin .4s cubic-bezier(.445,.05,.55,.95);
     padding-right: 20px;
-    min-width: 25vw;
+    min-width: 30vw;
     // box-sizing: border-box;
     overflow: hidden;
     div {
@@ -138,6 +138,9 @@ $largetxt: 2.5rem;
         h1 {
             font-weight: 400;
             font-size: $largetxt;
+            .txt_wrap{
+                width: 100%;box-sizing: border-box;
+            }
         }   
     }
 
